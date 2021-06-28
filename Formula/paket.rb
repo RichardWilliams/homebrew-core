@@ -9,6 +9,7 @@ class Paket < Formula
     sha256 cellar: :any_skip_relocation, all: "6b480630a9df01e8916e83f48c51d2b1c9b88a45295d9de8affd94e05f91aa10"
   end
 
+  depends_on arch: :x86_64 # mono is not yet supported on ARM
   depends_on "mono"
 
   def install
